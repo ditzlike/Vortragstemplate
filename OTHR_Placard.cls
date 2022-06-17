@@ -5,12 +5,7 @@
 %
 \ProvidesClass{OTHR_Placard}
 
-\DeclareOption*{\PassOptionsToClass{
-useDepartmentLogo,
-DIV=25,
-fontsize=16pt,
-paper=a4,
-\CurrentOption}{OTHRartcl}}
+\DeclareOption*{\expandafter\PassOptionsToClass\expandafter{\CurrentOption,useDepartmentLogo,DIV=25,fontsize=16pt,paper=a4}{OTHRartcl}}
 \ProcessOptions\relax
 %
 \LoadClass{OTHRartcl}
